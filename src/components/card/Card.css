@@ -1,0 +1,364 @@
+:root {
+  --color1: rgb(0, 231, 255);
+  --color2: rgb(255, 0, 231);
+  --back: url("https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg");
+  --charizard1: #fac;
+  --charizard2: #ddccaa;
+  --pika1: #54a29e;
+  --pika2: #a79d66;
+  --eevee1: #efb2fb;
+  --eevee2: #acc6f8;
+  --mewtwo1: #efb2fb;
+  --mewtwo2: #acc6f8;
+  /*Foils*/
+  --salazzFoil: url("/foils/salazzleFoil.png");
+  --greninFoil: url("/foils/greninjaFoil.png");
+}
+/* 
+.Dialga {
+  --color1: var(--charizard1);
+  --color2: var(--charizard2);
+  --front: var(--dialga);
+}
+ */
+.card.Common {
+  height: 446px;
+  width: 326px;
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+  z-index: 10;
+  touch-action: none;
+  mask: url("/foils/dialgaFoilFinal.png") no-repeat center center;
+  mask-size: cover;
+
+  border-radius: 5% / 3.5%;
+  box-shadow: -5px -5px 5px -5px var(--color1), 5px 5px 5px -5px var(--color2),
+    -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent,
+    0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  will-change: transform, filter;
+  background-color: #040712;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform-origin: center;
+}
+
+.card.Rare_Holo {
+  height: 446px;
+  width: 326px;
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+  z-index: 10;
+  touch-action: none;
+  mask: url("/foils/dialgaFoilFinal.png") no-repeat center center;
+  mask-size: cover;
+
+  border-radius: 5% / 3.5%;
+  box-shadow: -5px -5px 5px -5px var(--color1), 5px 5px 5px -5px var(--color2),
+    -7px -7px 10px -5px transparent, 7px 7px 10px -5px transparent,
+    0 0 5px 0px rgba(255, 255, 255, 0), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  will-change: transform, filter;
+  background-image: var(--dialga);
+  background-color: #040712;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform-origin: center;
+}
+
+/* RareHoloGx effects */
+
+.card.Rare_Holo_GX {
+  height: 446px;
+  width: 326px;
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+  z-index: 10;
+  touch-action: none;
+  border-radius: 5% / 3.5%;
+  box-shadow: -5px -5px 5px -5px var(--charizard1),
+    5px 5px 5px -5px var(--charizard2), -7px -7px 10px -5px transparent,
+    7px 7px 10px -5px transparent, 0 0 5px 0px rgba(255, 255, 255, 0),
+    0 55px 35px -20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  will-change: transform, filter;
+  background-color: #040712;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transform-origin: center;
+}
+
+.card.Rare_Holo_GX:hover {
+  box-shadow: -20px -20px 30px -25px var(--charizard1),
+    20px 20px 30px -25px var(--charizard2),
+    -7px -7px 10px -5px var(--charizard2), 7px 7px 10px -5px var(--charizard2),
+    0 0 13px 4px rgba(255, 255, 255, 0.3), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+}
+
+.card.Rare_Holo_GX:before,
+.card.Rare_Holo_GX:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  opacity: 1;
+  mix-blend-mode: color-dodge;
+  transition: all 0.33s ease;
+}
+
+.card.Rare_Holo_GX:before {
+  background-position: 50% 50%;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    115deg,
+    transparent 0%,
+    var(--charizard1) 25%,
+    transparent 47%,
+    transparent 53%,
+    var(--charizard2) 75%,
+    transparent 100%
+  );
+  opacity: 1;
+  filter: brightness(0.1) contrast(0.1);
+  z-index: 1;
+}
+
+.card.Rare_Holo_GX:after {
+  opacity: 1;
+  background-image: url("https://assets.codepen.io/13471/sparkles.gif"),
+    url("https://assets.codepen.io/13471/holo.png"),
+    linear-gradient(
+      125deg,
+      #ff008450 15%,
+      #fca40040 30%,
+      #ffff0030 40%,
+      #00ff8a20 60%,
+      #00cfff40 70%,
+      #cc4cfa50 85%
+    );
+  background-position: 50% 50%;
+  background-size: 160%;
+  background-blend-mode: overlay;
+  z-index: 2;
+  filter: brightness(1) contrast(1);
+  transition: all 0.33s ease;
+  mix-blend-mode: color-dodge;
+  opacity: 0.75;
+}
+
+.card.Rare_Holo_GX.active:after,
+.card.Rare_Holo_GX:hover:after {
+  filter: brightness(1) contrast(1);
+  opacity: 0;
+}
+
+.card.Rare_Holo_GX.active,
+.card.Rare_Holo_GX:hover {
+  animation: none;
+  transition: box-shadow 0.1s ease-out;
+}
+
+.card.Rare_Holo_GX.active:before,
+.card.Rare_Holo_GX:hover:before {
+  animation: none;
+  background-image: linear-gradient(
+    110deg,
+    transparent 25%,
+    var(--color1) 48%,
+    var(--color2) 52%,
+    transparent 75%
+  );
+  background-position: 50% 50%;
+  background-size: 250% 250%;
+  opacity: 0.88;
+  filter: brightness(0.66) contrast(1.33);
+  transition: none;
+}
+.card.Rare_Holo_GX.activeCard.animated {
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+}
+
+/*Incineroar Effects*/
+.card.Rare_Holo_GX.Incineroar-GX.activeCard:hover::before {
+  mask: url("/foils/incineroarFoil.png") no-repeat center center;
+  mask-mode: luminance;
+  mask-size: cover;
+  background-position: var(--lp) var(--tp);
+}
+
+.card.Rare_Holo_GX.Incineroar-GX.activeCard:hover::after {
+  mask: url("/foils/incineroarFoil.png") no-repeat center center;
+  mask-mode: luminance;
+  mask-size: cover;
+  background-position: var(--pxSpark) var(--pySpark);
+  opacity: var(--opc);
+}
+
+/*Salazzle Effects*/
+.card.Rare_Holo_GX.Salazzle-GX.activeCard:hover::before {
+  mask: url("/foils/salazzleFoil.png") no-repeat center center;
+  mask-mode: luminance;
+  mask-size: cover;
+  background-position: var(--lp) var(--tp);
+}
+
+.card.Rare_Holo_GX.Salazzle-GX.activeCard:hover::after {
+  mask: url("/foils/salazzleFoil.png") no-repeat center center;
+  mask-mode: luminance;
+  mask-size: cover;
+  background-position: var(--pxSpark) var(--pySpark);
+  opacity: var(--opc);
+}
+
+/*Greninja GX*/
+.card.Rare_Holo_GX.Greninja-GX.activeCard:hover::before {
+  mask: url("/foils/greninjaFoil.png") no-repeat center center;
+  mask-mode: luminance;
+  mask-size: cover;
+  background-position: var(--lp) var(--tp);
+}
+
+.card.Rare_Holo_GX.Greninja-GX.activeCard:hover::after {
+  mask: url("/foils/greninjaFoil.png") no-repeat center center;
+  mask-mode: luminance;
+  mask-size: cover;
+  background-position: var(--pxSpark) var(--pySpark);
+  opacity: var(--opc);
+}
+
+.card.Rare_Holo_GX.active:before,
+.card.Rare_Holo_GX:hover::before,
+.card.Rare_Holo_GX.active:after,
+.card.Rare_Holo_GX:hover::after {
+  animation: none;
+  transition: none;
+}
+
+.card.Rare_Holo_GX.animated {
+  transition: none;
+  animation: holoCard 12s ease 0s 1;
+  &:before {
+    transition: none;
+    animation: holoGradient 12s ease 0s 1;
+  }
+  &:after {
+    transition: none;
+    animation: holoSparkle 12s ease 0s 1;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    width: clamp(12.9vw, 61vh, 18vw);
+    height: clamp(18vw, 85vh, 25.2vw);
+  }
+}
+
+.card.Rare_Holo_GX {
+  transition: none;
+  animation: holoCard 12s ease 0s 1;
+  &:before {
+    transition: none;
+    animation: holoGradient 12s ease 0s 1;
+  }
+  &:after {
+    transition: none;
+    animation: holoSparkle 12s ease 0s 1;
+  }
+}
+
+@keyframes holoSparkle {
+  0%,
+  100% {
+    opacity: 0.75;
+    background-position: 50% 50%;
+    filter: brightness(1.2) contrast(1.25);
+  }
+  5%,
+  8% {
+    opacity: 1;
+    background-position: 40% 40%;
+    filter: brightness(0.8) contrast(1.2);
+  }
+  13%,
+  16% {
+    opacity: 0.5;
+    background-position: 50% 50%;
+    filter: brightness(1.2) contrast(0.8);
+  }
+  35%,
+  38% {
+    opacity: 1;
+    background-position: 60% 60%;
+    filter: brightness(1) contrast(1);
+  }
+  55% {
+    opacity: 0.33;
+    background-position: 45% 45%;
+    filter: brightness(1.2) contrast(1.25);
+  }
+}
+
+@keyframes holoGradient {
+  0%,
+  100% {
+    opacity: 0.5;
+    background-position: 50% 50%;
+    filter: brightness(0.5) contrast(1);
+  }
+  5%,
+  9% {
+    background-position: 100% 100%;
+    opacity: 1;
+    filter: brightness(0.75) contrast(1.25);
+  }
+  13%,
+  17% {
+    background-position: 0% 0%;
+    opacity: 0.88;
+  }
+  35%,
+  39% {
+    background-position: 100% 100%;
+    opacity: 1;
+    filter: brightness(0.5) contrast(1);
+  }
+  55% {
+    background-position: 0% 0%;
+    opacity: 1;
+    filter: brightness(0.75) contrast(1.25);
+  }
+}
+
+@keyframes holoCard {
+  0%,
+  100% {
+    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+  }
+  5%,
+  8% {
+    transform: rotateZ(0deg) rotateX(6deg) rotateY(-20deg);
+  }
+  13%,
+  16% {
+    transform: rotateZ(0deg) rotateX(-9deg) rotateY(32deg);
+  }
+  35%,
+  38% {
+    transform: rotateZ(3deg) rotateX(12deg) rotateY(20deg);
+  }
+  55% {
+    transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg);
+  }
+}

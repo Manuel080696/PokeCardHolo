@@ -1,0 +1,126 @@
+{
+  "data": [
+    {
+      "name": "Paras",
+      "supertype": "Pokémon",
+      "subtypes": ["Basic"],
+      "types": ["Grass"],
+      "artist": "Ayaka Yoshida",
+      "rarity": "Common",
+      "flavorText": "No matter how much it eats, the mushrooms growing on its back steal away most of the nutrients it consumes.",
+      "nationalPokedexNumbers": [46],
+      "images": {
+        "small": "https://images.pokemontcg.io/sm1/4.png",
+        "large": "https://images.pokemontcg.io/sm1/4_hires.png"
+      }
+    },
+    {
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": ["Basic"],
+      "types": ["Fire"],
+      "artist": "Megumi Mizutani",
+      "rarity": "Common",
+      "flavorText": "The flame on its tail indicates Charmander's life force. If it is healthy, the flame burns brightly.",
+      "nationalPokedexNumbers": [4],
+      "images": {
+        "small": "https://images.pokemontcg.io/sm115/7.png",
+        "large": "https://images.pokemontcg.io/sm115/7_hires.png"
+      }
+    },
+    {
+      "name": "Shelmet",
+      "supertype": "Pokémon",
+      "subtypes": ["Basic"],
+      "types": ["Grass"],
+      "artist": "Sumiyoshi Kizuki",
+      "rarity": "Common",
+      "flavorText": "When it and Karrablast are together, and both receive electrical stimulation, they both evolve.",
+      "nationalPokedexNumbers": [616],
+      "images": {
+        "small": "https://images.pokemontcg.io/bw10/7.png",
+        "large": "https://images.pokemontcg.io/bw10/7_hires.png"
+      }
+    },
+    {
+      "name": "Dialga",
+      "supertype": "Pokémon",
+      "subtypes": ["Basic"],
+      "types": ["Metal"],
+      "artist": "Nakaoka",
+      "rarity": "Rare Holo",
+      "flavorText": "It has the power to control time. It appears in Sinnoh-region myths as an ancient deity.",
+      "nationalPokedexNumbers": [483],
+      "images": {
+        "small": "https://images.pokemontcg.io/dp1/1.png",
+        "large": "https://images.pokemontcg.io/dp1/1_hires.png"
+      }
+    },
+    {
+      "name": "Blaine's Arcanine",
+      "supertype": "Pokémon",
+      "subtypes": ["Stage 1"],
+      "types": ["Fire"],
+      "artist": "Ken Sugimori",
+      "rarity": "Rare Holo",
+      "nationalPokedexNumbers": [59],
+      "images": {
+        "small": "https://images.pokemontcg.io/gym2/1.png",
+        "large": "https://images.pokemontcg.io/gym2/1_hires.png"
+      }
+    },
+    {
+      "name": "Clefable",
+      "supertype": "Pokémon",
+      "subtypes": ["Stage 1"],
+      "types": ["Colorless"],
+      "artist": "sui",
+      "rarity": "Rare Holo",
+      "flavorText": "With its acute hearing, it can pick up sounds from far away. It usually hides in quiet places.",
+      "nationalPokedexNumbers": [36],
+      "images": {
+        "small": "https://images.pokemontcg.io/col1/1.png",
+        "large": "https://images.pokemontcg.io/col1/1_hires.png"
+      }
+    },
+    {
+      "name": "Incineroar-GX",
+      "supertype": "Pokémon",
+      "subtypes": ["Stage 2", "GX"],
+      "types": ["Fire"],
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo GX",
+      "nationalPokedexNumbers": [727],
+      "images": {
+        "small": "https://images.pokemontcg.io/sm1/27.png",
+        "large": "https://images.pokemontcg.io/sm1/27_hires.png"
+      }
+    },
+    {
+      "name": "Salazzle-GX",
+      "supertype": "Pokémon",
+      "subtypes": ["Stage 1", "GX"],
+      "types": ["Fire"],
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo GX",
+      "nationalPokedexNumbers": [758],
+      "images": {
+        "small": "https://images.pokemontcg.io/sm3/25.png",
+        "large": "https://images.pokemontcg.io/sm3/25_hires.png"
+      }
+    },
+    {
+      "name": "Greninja-GX",
+      "supertype": "Pokémon",
+      "subtypes": ["Stage 2", "GX"],
+      "types": ["Water"],
+      "artist": "5ban Graphics",
+      "rarity": "Rare Holo GX",
+      "nationalPokedexNumbers": [658],
+      "images": {
+        "small": "https://images.pokemontcg.io/sm6/24.png",
+        "large": "https://images.pokemontcg.io/sm6/24_hires.png"
+      }
+    }
+  ]
+}
