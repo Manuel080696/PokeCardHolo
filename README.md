@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>Página Web de Cartas Pokémon 3D</h1>
 
-## Getting Started
+  <p>¡Bienvenido/a a mi proyecto de cartas Pokémon en 3D! 🌟</p>
 
-First, run the development server:
+  <h2>Descripción</h2>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  <p>Este proyecto consiste en una página web interactiva que presenta cartas Pokémon brillantes y girables en un formato "3D". La idea es recrear la experiencia mágica de coleccionar cartas Pokémon, pero con un toque moderno y visualmente impactante.</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  <h2>Características</h2>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+  <ul>
+    <li><strong>Cartas Pokémon en 3D:</strong> Disfruta de cartas que cobran vida con efectos de brillo y rotación tridimensional al pasar el ratón sobre ellas.</li>
+    <li><strong>Diversidad de Cartas:</strong> La página incluye una amplia variedad de cartas Pokémon icónicas, cada una con su propio efecto visual único.</li>
+    <li><strong>Interactividad:</strong> Experimenta la sensación de tener las cartas en tus manos al interactuar con ellas mediante la interacción del ratón.</li>
+  </ul>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  <h2>Capturas de Pantalla</h2>
 
-## Learn More
+  <img src="url_de_la_primera_imagen.png" alt="Captura de Pantalla 1">
+  <p><em>Efecto 3D y holográfico</em></p>
 
-To learn more about Next.js, take a look at the following resources:
+  <h2>Cómo Usar</h2>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  <ol>
+    <li>Clona este repositorio en tu máquina local.
+      <pre><code>git clone https://github.com/tu_usuario/nombre_del_repositorio.git</code></pre>
+    </li>
+    <li>Abre el archivo <code>index.html</code> en tu navegador favorito.</li>
+    <li>¡Explora las cartas Pokémon en 3D y disfruta de la experiencia!</li>
+  </ol>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  <h2>Contribuciones</h2>
 
-## Deploy on Vercel
+  <p>¡Las contribuciones son bienvenidas! Si tienes alguna idea para mejorar este proyecto, por favor, abre un issue o envía un pull request.</p>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  <h2>Licencia</h2>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  <p>Este proyecto está bajo la Licencia <a href="LICENSE">MIT</a>.</p>
+
+  <hr>
+
+  <p>¡Espero que disfrutes explorando las cartas Pokémon en 3D! Si tienes alguna pregunta o sugerencia, no dudes en <a href="mailto:tu@email.com">contactarme</a>.</p>
+
