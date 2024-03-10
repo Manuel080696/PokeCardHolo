@@ -33,7 +33,7 @@ export const Cards = () => {
               {group.rarity}
             </h2>
             <hr className="w-full h-px bg-gray-200 " />
-            <ul className="flex flex-row items-center justify-center gap-9 py-6  bg-gray-800/50 w-full">
+            <ul className="flex flex-row items-center justify-center gap-9 py-6 bg-gray-800/50 w-full">
               {group.cards.map((card) => (
                 <Card card={card} key={card.name} rarity={card.rarity} />
               ))}

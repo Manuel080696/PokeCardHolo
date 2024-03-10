@@ -1,10 +1,8 @@
 "use client";
 
-import { Atropos, RotateChildrenOnly } from "atropos/react";
 import "./Card.css";
-import "atropos/css";
 import React from "react";
-import { useEffect, useState, useRef } from "react";
+import { useState } from "react";
 
 export const Card = ({ card, rarity }) => {
   const [effect, setEffect] = useState("");
@@ -17,8 +15,11 @@ export const Card = ({ card, rarity }) => {
   const [opacity, setOpacity] = useState(0);
 
   const handleMove = (e) => {
-    e?.target?.classList.remove("animated");
+    
+    e?.target?.classList.add("activeCard");
     let pos = [e?.nativeEvent?.offsetX, e?.nativeEvent?.offsetY];
+
+    console.log(e);
 
     if (e.type === "touchmove") {
       pos = [e?.touches[0]?.clientX, e?.touches[0]?.clientY];
@@ -26,25 +27,26 @@ export const Card = ({ card, rarity }) => {
 
     setPos(pos);
 
-    let l = pos[1];
-    let t = pos[0];
-    let h = e?.screenX;
-    let w = e?.screenY;
-    let px = Math.abs(Math.floor((100 / w) * l - 100));
-    let py = Math.abs(Math.floor((100 / h) * t - 100));
-    let pa = 50 - px + (50 - py);
-    let lp = 0 + (py - 50) / 1.5;
-    let tp = 35 + (px - 50) / 1.25;
-    let px_spark = 50 + (py - 50) / 7;
-    let py_spark = 50 + (px - 50) / 7;
-    let p_opc = 20 + Math.abs(pa) * 1.5;
-    let ty = ((tp - 50) / 1.5) * 2;
-    let tx = ((lp - 50) / 1) * 1;
-    let grad_pos = `background-position: ${tp}% ${lp}%;`;
-    let sprk_pos = `background-position: ${py_spark}% ${px_spark}%;`;
-    let opc = `opacity: ${p_opc / 200};`;
-    let tf = `translate3d(0px, 0px, 0px) rotateX(${ty}deg) rotateY(${tx}deg)`;
+    let l = pos[0];
+    let t = pos[1];
+    let h = e?.target?.clientHeight;
+    let w = e?.target?.clientWidth;
+    let px = Math.abs(Math.floor((100 / w * l) - 100));
+    let py = Math.abs(Math.floor((100 / h * t) - 100));
+    let pa = (50 - px) + (50 - py);
+    let lp = (50 + (px - 50) / 1.5);
+    let tp = (50 + (py - 50) / 1.5);
+    let px_spark = (50 + (px - 50) / 7);
+    let py_spark = (50 + (py - 50) / 7);
+    let p_opc = 20 + (Math.abs(pa) * 1.5);
+    let ty = ((tp - 50) / 2) * -1;
+    let tx = ((lp - 50) / 1.5) * 0.5;
+    let grad_pos = `background-position: ${lp}% ${tp}%;`;
+    let sprk_pos = `background-position: ${px_spark}% ${py_spark}%;`;
+    let opc = p_opc / 100;
+    let tf = `rotateX(${ty}deg) rotateY(${tx}deg)`;
 
+    /* eslint-enable */
     setLp(lp);
     setTp(tp);
     setPxSpark(px_spark);
@@ -54,10 +56,13 @@ export const Card = ({ card, rarity }) => {
   };
 
   const handleLeave = (e) => {
+    
     setTimeout(() => {
-      setTf("translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg)");
-      e?.target?.classList.add("animated");
+      e?.target?.classList.remove("activeCard");
+      setTf("rotateX(0deg) rotateY(0deg)");
+     
     }, 2500);
+    
   };
 
   return (
@@ -67,6 +72,7 @@ export const Card = ({ card, rarity }) => {
         onMouseLeave={(e) => handleLeave(e)}
         style={{
           transform: tf,
+          transitionTimingFunction: "ease-in-out",
           backgroundImage: `url(${card.images.large})`,
           "--opc": `${opacity}`,
           "--lp": `${lp}%`,
