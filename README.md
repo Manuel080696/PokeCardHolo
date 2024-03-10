@@ -17,7 +17,7 @@
 <h2>📸 Capturas de Pantalla</h2>
 
 <p><em>Efecto 3D y holográfico</em></p>
-<img src="https://github.com/Manuel080696/PruebasManu/blob/main/pokemonvista%20(1).gif" />
+<img src="https://github.com/Manuel080696/PruebasManu/blob/main/pokeHoloGifActualizado.gif" />
 
 <h2>🚀 Cómo Usar</h2>
 
