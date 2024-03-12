@@ -5,7 +5,7 @@ import { CardProviderComponent } from "@/context/CardContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "PokemonTGC",
+  title: "PokemonTCG",
   description: "App para visualizar las cardas TGC de Pokémon",
 };
 
