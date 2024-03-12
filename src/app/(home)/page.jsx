@@ -7,7 +7,7 @@ export default function Home() {
     <div className="flex flex-col items-center justigy-center father backdrop-filter backdrop-blur-sm">
       <Title
         title="Pokémon"
-        subtitle="Trading Game Card"
+        subtitle="Trading Card Game"
         className="mb-2 m-2 md:m-0"
       />
       <Cards />
