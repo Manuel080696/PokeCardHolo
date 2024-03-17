@@ -1,3 +1,5 @@
+<img src="https://github.com/Manuel080696/PruebasManu/blob/main/pokeHoloLogo.png" alt="logo" width=80px/>
+
 <h1>🌟 Página Web de Cartas Pokémon 3D 🌟</h1>
 
 <p>¡Bienvenido/a a mi proyecto de cartas Pokémon en 3D! 🌟</p>
